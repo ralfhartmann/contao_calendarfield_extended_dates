@@ -83,7 +83,7 @@ class CalendarfieldExtendedDates extends Controller
 
 
 		// check if the submitted value is in the given range
-		if (!($objDatetimeSubmit > $objDatetimeFrom && $objDatetimeSubmit < $objDatetimeTo))
+		if (!($objDatetimeSubmit >= $objDatetimeFrom && $objDatetimeSubmit <= $objDatetimeTo))
 		{
 			// the error message is editable in the language file, so we have to load them
 			$this->loadLanguageFile('tl_form_field');
